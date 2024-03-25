@@ -45,7 +45,7 @@ const AudioTranslate = () => {
       // const url = window.URL.createObjectURL(new Blob([response.link]));
       // console.log(url);
 
-      downloadAudio(response.link);
+      downloadAudio();
 
       // window.location.href = response.link;
     }

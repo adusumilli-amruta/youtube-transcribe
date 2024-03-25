@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+.common {
+    display: flex;
+    justify-content: center;
+  }
+  .common-even {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .common-bet {
+    display: flex;
+    justify-content: space-between;
+  }
+  .common-around {
+    display: flex;
+    justify-content: space-around;
+  }
+  .align {
+    align-items: center;
+  }
+  .flex-col {
+    flex-direction: column;
+  }
+  .flex-row {
+    flex-direction: row;
+  }
+  .col-10 {
+    width: 10%;
+  }
+  .col-15 {
+    width: 15%;
+  }
+  .col-20 {
+    width: 20%;
+  }
+  .col-25 {
+    width: 25%;
+  }
+  .col-30 {
+    width: 30%;
+  }
+  .col-35 {
+    width: 35%;
+  }
+  .col-40 {
+    width: 40%;
+  }
+  .col-45 {
+    width: 45%;
+  }
+  .col-50 {
+    width: 50%;
+  }
+  .col-55 {
+    width: 55%;
+  }
+  .col-60 {
+    width: 60%;
+  }
+  .col-65 {
+    width: 65%;
+  }
+  .col-70 {
+    width: 70%;
+  }
+  .col-75 {
+    width: 75%;
+  }
+  .col-80 {
+    width: 80%;
+  }
+  .col-85 {
+    width: 85%;
+  }
+  .col-90 {
+    width: 90%;
+  }
+  .col-95 {
+    width: 95%;
+  }
+  .col-100 {
+    width: 100%;
+  }
+
+
+.home-y {
+    height: 100vh;
+    background-image: url("https://i.postimg.cc/TYjXfRyJ/play-button-media-player-podcast-graphic.jpg");
+    opacity: 0.4;
+}
+.home-y-content {
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+.home-y-content h1 {
+    opacity: 0;
+    font-size: 5pc;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 1pc;
+    animation: opac 1s linear forwards;
+}
+.home-y-content a {
+    color: #fff;
+    letter-spacing: .7px;
+    padding: 8px 30px;
+    border-radius: 20px;
+    border: 2px solid #EFBC9B;
+    text-decoration: none;
+}
+.home-y-content a:hover {
+    transition: .3s;
+    color: #000;
+    background: #EFBC9B;
+}
+.about-y {
+    height: auto;
+    padding: 3pc 0;
+}
+.about-left,
+.about-right {
+    padding: 2pc 0;
+    /* border: 2px solid white; */
+}
+.about-left h2,
+.demo h2 {
+    font-size: 3pc;
+    text-align: center;
+}
+.about-right p {
+    font-size: 16px;
+    letter-spacing: .4px;
+}
+.about-right a {
+    color: #EFBC9B;
+    font-size: 17px;
+    /* text-decoration: none; */
+}
+.demo {
+    padding: 5pc;
+}
+.demo-main {
+    padding: 2pc;
+    border-radius: 15px;
+    background-color: #EFBC9B;
+}
+.demo h2 {
+    margin-bottom: 1pc;
+}
+
+
+
+@keyframes opac {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

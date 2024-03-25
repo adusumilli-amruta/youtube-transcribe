@@ -1,0 +1,46 @@
+[debug] [2024-03-25T09:31:39.686Z] ----------------------------------------------------------------------
+[debug] [2024-03-25T09:31:39.688Z] Command:       /usr/local/bin/firebase /Users/nikhilkasanaboina/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase deploy
+[debug] [2024-03-25T09:31:39.688Z] CLI Version:   11.24.1
+[debug] [2024-03-25T09:31:39.689Z] Platform:      darwin
+[debug] [2024-03-25T09:31:39.689Z] Node Version:  v16.16.0
+[debug] [2024-03-25T09:31:39.690Z] Time:          Mon Mar 25 2024 15:01:39 GMT+0530 (India Standard Time)
+[debug] [2024-03-25T09:31:39.690Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-03-25T09:31:39.764Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-03-25T09:31:39.764Z] > authorizing via signed-in user (kharisainikhil@gmail.com)
+[debug] [2024-03-25T09:31:39.765Z] [iam] checking project transcripter-e8b9e for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-03-25T09:31:39.767Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/transcripter-e8b9e:testIamPermissions [none]
+[debug] [2024-03-25T09:31:39.767Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/transcripter-e8b9e:testIamPermissions x-goog-quota-user=projects/transcripter-e8b9e
+[debug] [2024-03-25T09:31:39.768Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/transcripter-e8b9e:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-03-25T09:31:41.263Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/transcripter-e8b9e:testIamPermissions 200
+[debug] [2024-03-25T09:31:41.263Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/transcripter-e8b9e:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-03-25T09:31:41.264Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/transcripter-e8b9e [none]
+[debug] [2024-03-25T09:31:41.868Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/transcripter-e8b9e 200
+[debug] [2024-03-25T09:31:41.868Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/transcripter-e8b9e {"projectId":"transcripter-e8b9e","projectNumber":"662020442151","displayName":"youtube-transcripter","name":"projects/transcripter-e8b9e","resources":{"hostingSite":"transcripter-e8b9e"},"state":"ACTIVE","etag":"1_09afcd19-af92-4355-96f2-7d5d7a54c504"}
+[debug] [2024-03-25T09:31:45.298Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/transcripter-e8b9e/sites pageToken=&pageSize=10
+[debug] [2024-03-25T09:31:46.416Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/transcripter-e8b9e/sites 200
+[debug] [2024-03-25T09:31:46.416Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/transcripter-e8b9e/sites {"sites":[{"name":"projects/transcripter-e8b9e/sites/transcripter-e8b9e","defaultUrl":"https://transcripter-e8b9e.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2024-03-25T09:31:46.417Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/transcripter-e8b9e/sites 
+[debug] [2024-03-25T09:31:47.395Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/transcripter-e8b9e/sites 200
+[debug] [2024-03-25T09:31:47.395Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/transcripter-e8b9e/sites {"sites":[{"name":"projects/transcripter-e8b9e/sites/transcripter-e8b9e","defaultUrl":"https://transcripter-e8b9e.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2024-03-25T09:31:47.396Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/transcripter-e8b9e/webApps/-/config [none]
+[debug] [2024-03-25T09:31:48.214Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/transcripter-e8b9e/webApps/-/config 200
+[debug] [2024-03-25T09:31:48.215Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/transcripter-e8b9e/webApps/-/config {"projectId":"transcripter-e8b9e","storageBucket":"transcripter-e8b9e.appspot.com","apiKey":"AIzaSyB7jEuhGHbm6ih4wsv80SmUVH4Gv3SuvqI","authDomain":"transcripter-e8b9e.firebaseapp.com","messagingSenderId":"662020442151"}
+[debug] [2024-03-25T09:31:50.358Z] Error: Cannot find module 'next/dist/build'
+Require stack:
+- /Users/nikhilkasanaboina/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/frameworks/index.js
+- /Users/nikhilkasanaboina/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/emulator/controller.js
+- /Users/nikhilkasanaboina/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/emulator/commandUtils.js
+- /Users/nikhilkasanaboina/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/commands/database-get.js
+- /Users/nikhilkasanaboina/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/commands/index.js
+- /Users/nikhilkasanaboina/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/index.js
+- /Users/nikhilkasanaboina/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function._resolveFilename (pkg/prelude/bootstrap.js:1955:46)
+    at Function.resolve (node:internal/modules/cjs/helpers:108:19)
+    at relativeRequire (/Users/nikhilkasanaboina/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/frameworks/index.js:60:30)
+    at build (/Users/nikhilkasanaboina/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/frameworks/next/index.js:49:60)
+    at prepareFrameworks (/Users/nikhilkasanaboina/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/frameworks/index.js:261:114)
+    at async deploy (/Users/nikhilkasanaboina/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/deploy/index.js:53:13)
+[error] 
+[error] Error: An unexpected error has occurred.
